@@ -447,7 +447,7 @@ func batalha(meuPoketito: [String: Any], inimigo: [String: Any]) -> [String: Any
 
     while true {
 
-        print("\n \(meu["nome"]!): \(meu["vidaAtual"]!)/\(meu["vidaMax"]!) ❤️")
+        print("\n\(meu["nome"]!): \(meu["vidaAtual"]!)/\(meu["vidaMax"]!) ❤️")
         print("\(inim["nome"]!): \(inim["vidaAtual"]!)/\(inim["vidaMax"]!) 💀\n")
 
         let ataques = meu["ataques"] as! [[String: Any]]
@@ -523,14 +523,19 @@ func evoluir(_ poke: [String: Any]) -> [String: Any] {
 
     switch nome {
     case "Flamito":
+        print("\n✨ Agora você tem um Flamitron ✨")
         return flamitron
     case "Aguatito":
+        print("\n✨ Agora você tem um AguaJato ✨")
         return aguajato
     case "Plantito":
+        print("\n✨ Agora você tem um Plantopus ✨")
         return plantopus
     case "Gulosito":
+        print("\n✨ Agora você tem um Gulosão ✨")
         return gulosao
     case "Pikatito":
+        print("\n✨ Agora você tem um Pikaton ✨")
         return pikaton
     default:
         return poke
